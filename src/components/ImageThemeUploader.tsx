@@ -148,10 +148,6 @@ const ImageThemeUploader: React.FC = () => {
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
   const sliderRef = useRef<HTMLDivElement>(null);
-  const inputRefs = {
-    light: useRef<HTMLInputElement>(null),
-    dark: useRef<HTMLInputElement>(null)
-  };
 
   const handleImageSelection = (theme: Theme, file: File) => {
     if (file.type.startsWith('image/')) {
@@ -170,6 +166,7 @@ const ImageThemeUploader: React.FC = () => {
   };
 
   const handleMouseDown = (e: React.MouseEvent) => {
+    e.preventDefault();
     setIsDragging(true);
   };
 
