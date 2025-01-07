@@ -2,7 +2,6 @@ import React, { useState, useCallback, useRef } from 'react';
 import { Sun, Moon, Upload, AlertCircle, Trash2, ImagePlus, ArrowRight } from 'lucide-react';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Button } from '@/components/ui/button';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { AnimatePresence, motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
