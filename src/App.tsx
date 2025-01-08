@@ -4,6 +4,7 @@ import ImageThemeUploader from './components/ImageThemeUploader'
 import { Github, ArrowRight, MonitorSmartphone, Image, Code, Sparkles, Moon, Sun } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 function App() {
   const [showTool, setShowTool] = useState(false);
@@ -204,18 +205,18 @@ function App() {
               >
                 GitHub
               </a>
-              <a 
-                href="/docs" 
+              <Link 
+                to="/docs" 
                 className="text-gray-500 hover:text-gray-900 dark:text-[#888888] dark:hover:text-white transition-colors"
               >
                 Documentation
-              </a>
-              <a 
-                href="/examples" 
+              </Link>
+              <Link 
+                to="/examples" 
                 className="text-gray-500 hover:text-gray-900 dark:text-[#888888] dark:hover:text-white transition-colors"
               >
                 Examples
-              </a>
+              </Link>
             </div>
           </div>
         </footer>
