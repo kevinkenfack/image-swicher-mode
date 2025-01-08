@@ -70,7 +70,7 @@ function App() {
           <ThemeToggle />
         </div>
 
-        {/* Hero Section */}
+        {/* Hero Section avec vidéo */}
         <header className="relative py-24">
           <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:radial-gradient(white,transparent_85%)] opacity-10 dark:opacity-100" />
           
@@ -120,6 +120,28 @@ function App() {
                   </Button>
                 </a>
               </div>
+
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                className="mt-16 mx-auto max-w-4xl rounded-xl overflow-hidden border border-gray-200 dark:border-[#333333] bg-white/5 backdrop-blur-sm shadow-2xl"
+              >
+                <div className="relative aspect-video">
+                  <video 
+                    autoPlay 
+                    loop 
+                    muted 
+                    playsInline
+                    className="w-full h-full object-cover"
+                  >
+                    <source src="/demo.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
+                </div>
+              </motion.div>
+
             </motion.div>
           </div>
         </header>
