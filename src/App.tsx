@@ -211,7 +211,7 @@ function App() {
                 Documentation
               </a>
               <a 
-                href="#examples" 
+                href="/examples" 
                 className="text-gray-500 hover:text-gray-900 dark:text-[#888888] dark:hover:text-white transition-colors"
               >
                 Examples
