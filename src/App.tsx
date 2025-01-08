@@ -196,13 +196,24 @@ function App() {
               © 2024 Theme Image Switcher. Built with ❤️ for developers.
             </p>
             <div className="mt-4 flex items-center justify-center gap-6">
-              <a href={GITHUB_REPO} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-[#888888] dark:hover:text-white transition-colors">
+              <a 
+                href={GITHUB_REPO} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-500 hover:text-gray-900 dark:text-[#888888] dark:hover:text-white transition-colors"
+              >
                 GitHub
               </a>
-              <a href="#" className="text-gray-500 hover:text-gray-900 dark:text-[#888888] dark:hover:text-white transition-colors">
+              <a 
+                href="/docs" 
+                className="text-gray-500 hover:text-gray-900 dark:text-[#888888] dark:hover:text-white transition-colors"
+              >
                 Documentation
               </a>
-              <a href="#" className="text-gray-500 hover:text-gray-900 dark:text-[#888888] dark:hover:text-white transition-colors">
+              <a 
+                href="#examples" 
+                className="text-gray-500 hover:text-gray-900 dark:text-[#888888] dark:hover:text-white transition-colors"
+              >
                 Examples
               </a>
             </div>
